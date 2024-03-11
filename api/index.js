@@ -4,7 +4,10 @@ import cors from "cors";
 import { fetchTasks, createTasks, updateTasks, deleteTasks } from "./task.js";
 
 const app = express();
+// const cors = require('cors');
 const port = 3001;
+
+app.use(cors());
 
 app.use(express.json());
 
